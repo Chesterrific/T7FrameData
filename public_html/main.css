@@ -1,0 +1,27 @@
+/*T7 Banner*/
+.bg{
+    width: 100%;
+    
+}
+
+header{
+    background: #000000;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #E50000 3px solid;
+}
+
+/*Roster Styles*/
+.roster{
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.character-portrait{
+    background-image: url("img/gradient.jpg");
+    border: #E50000 3px solid;
+    text-align: right;
+}
