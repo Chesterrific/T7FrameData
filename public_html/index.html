@@ -16,13 +16,26 @@
                 </div>
             </div>
         </header>
-        
+
         <div id="leftNav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
-        
+
         <div id="rightNav" class="sidenav">
-            
+            <table id="commandList">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Hit Level</th>
+                        <th>Startup</th>
+                        <th>On Block</th>
+                        <th>On Hit</th>
+                        <th>On CH</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="moves"></tbody>
+            </table>
         </div>
 
         <section class="roster">
@@ -39,177 +52,177 @@
                         </div>Alisa
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('asuka')">
                             <img src="chars/asuka_thumbnail.png" class="img-fluid">
                         </div>Asuka
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('bob')">
                             <img src="chars/bob_thumbnail.png" class="img-fluid">
                         </div>Bob
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('bryan')">
                             <img src="chars/bryan_thumbnail.png" class="img-fluid">
                         </div>Bryan
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('claudio')">
                             <img src="chars/claudio_thumbnail.png" class="img-fluid">
                         </div>Claudio
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('deviljin')">
                             <img src="chars/deviljin_thumbnail.png" class="img-fluid">
                         </div>Devil Jin
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('dragunov')">
                             <img src="chars/dragunov_thumbnail.png" class="img-fluid">
                         </div>Dragunov
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('eddy')">
                             <img src="chars/eddy_thumbnail.png" class="img-fluid">
                         </div>Eddy
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('eliza')">
                             <img src="chars/eliza_thumbnail.png" class="img-fluid">
                         </div>Eliza
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('feng')">
                             <img src="chars/feng_thumbnail.png" class="img-fluid">
                         </div>Feng
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('gigas')">
                             <img src="chars/gigas_thumbnail.png" class="img-fluid">
                         </div>Gigas
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('heihachi')">
                             <img src="chars/heihachi_thumbnail.png" class="img-fluid">
                         </div>Heihachi
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('hwoarang')">
                             <img src="chars/hwoarang_thumbnail.png" class="img-fluid">
                         </div>Hwoarang
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('jack7')">
                             <img src="chars/jack7_thumbnail.png" class="img-fluid">
                         </div>Jack 7
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('jin')">
                             <img src="chars/jin_thumbnail.png" class="img-fluid">
                         </div>Jin
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('josie')">
                             <img src="chars/josie_thumbnail.png" class="img-fluid">
                         </div>Josie
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('katarina')">
                             <img src="chars/katarina_thumbnail.png" class="img-fluid">
                         </div>Katarina
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('kazumi')">
                             <img src="chars/kazumi_thumbnail.png" class="img-fluid">
                         </div>Kazumi
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('kazuya')">
                             <img src="chars/kazuya_thumbnail.png" class="img-fluid">
                         </div>Kazuya
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('king')">
                             <img src="chars/king_thumbnail.png" class="img-fluid">
                         </div>King
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('kuma')">
                             <img src="chars/kuma_thumbnail.png" class="img-fluid">
                         </div>Kuma
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('lars')">
                             <img src="chars/lars_thumbnail.png" class="img-fluid">
                         </div>Lars
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('law')">
                             <img src="chars/law_thumbnail.png" class="img-fluid">
                         </div>Law
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('lee')">
                             <img src="chars/lee_thumbnail.png" class="img-fluid">
                         </div>Lee
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('leo')">
                             <img src="chars/leo_thumbnail.png" class="img-fluid">
                         </div>Leo
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('lili')">
                             <img src="chars/lili_thumbnail.png" class="img-fluid">
-                        </div>Lili
+                        </div>LiLi
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('luckychloe')">
                             <img src="chars/luckychloe_thumbnail.png" class="img-fluid">
                         </div>Lucky Chloe
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('miguel')">
                             <img src="chars/miguel_thumbnail.png" class="img-fluid">
                         </div>Miguel
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('nina')">
                             <img src="chars/nina_thumbnail.png" class="img-fluid">
                         </div>Nina
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('panda')">
                             <img src="chars/panda_thumbnail.png" class="img-fluid">
                         </div>Panda
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('paul')">
                             <img src="chars/paul_thumbnail.png" class="img-fluid">
                         </div>Paul
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
-                            <img src="chars/raven_thumbnail.png" class="img-fluid">
+                        <div class="character-portrait rounded" onclick="openNav('masterraven')">
+                            <img src="chars/masterraven_thumbnail.png" class="img-fluid">
                         </div>Master Raven
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('shaheen')">
                             <img src="chars/shaheen_thumbnail.png" class="img-fluid">
                         </div>Shaheen
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('steve')">
                             <img src="chars/steve_thumbnail.png" class="img-fluid">
                         </div>Steve
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('xiaoyu')">
                             <img src="chars/xiaoyu_thumbnail.png" class="img-fluid">
                         </div>Xiaoyu
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <div class="character-portrait rounded">
+                        <div class="character-portrait rounded" onclick="openNav('yoshimitsu')">
                             <img src="chars/yoshimitsu_thumbnail.png" class="img-fluid">
                         </div>Yoshimitsu
                     </div>
