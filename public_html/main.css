@@ -9,13 +9,22 @@ header{
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #E50000 3px solid;
+    background-image: url(img/glass.jpg); 
+    background-size: cover;
+}
+
+body{
+    background-image: url(img/heihachibg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*Roster Styles*/
 /*Font*/
 @font-face{
     font-family: "myFont";
-    src: url("font/tarrget/tarrget.ttf");
+    src: url("font/tarrget/tarrgetital.ttf");
 }
 
 .roster{
@@ -23,20 +32,27 @@ header{
     text-align: center;
     font-family: myFont;
     font-size: 30px;
+    color: silver;
+    -webkit-text-stroke: 2px #000000;
+    /*text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;*/
 }
 
 .character-portrait{
     background-image: url("img/gradient.jpg");
     border: #E50000 3px solid;
+    color: gray;
     text-align: right;
 }
 
-.col-12{
+.col-12, .col-12:before{
     margin-bottom: 3%;
+    background-image: url("img/brush.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .character-portrait:hover{
-    border-color: #000000;
+    border-color: white;
 }
 
 /* The side navigation menu */

@@ -18,8 +18,8 @@ function openNav(name) {
     var sidebarL = document.getElementById("leftNav");
     var sidebarR = document.getElementById("rightNav");
 
-    sidebarL.style.width = "60%";
-    sidebarR.style.width = "40%";
+    sidebarL.style.width = "55%";
+    sidebarR.style.width = "45%";
 
     sidebarL.innerHTML += '<img src="chars/' + name + '_thumbnail.png" class="img-fluid">';
 
