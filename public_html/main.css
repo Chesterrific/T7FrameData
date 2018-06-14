@@ -32,7 +32,6 @@ body{
     text-align: center;
     font-family: myFont;
     font-size: 30px;
-    color: silver;
     -webkit-text-stroke: 2px #000000;
     /*text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;*/
 }
@@ -40,15 +39,16 @@ body{
 .character-portrait{
     background-image: url("img/gradient.jpg");
     border: #E50000 3px solid;
-    color: gray;
     text-align: right;
 }
 
-.col-12, .col-12:before{
+/*Text Style*/
+.col-12{
     margin-bottom: 3%;
-    background-image: url("img/brush.jpg");
-    -webkit-background-clip: text;
+    color: silver;
+    /*-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: url("img/brush.jpg");*/
 }
 
 .character-portrait:hover{
@@ -63,7 +63,7 @@ body{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: rgba(0,0,0,0.8); 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
