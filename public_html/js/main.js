@@ -21,7 +21,7 @@ function openNav(name) {
     sidebarL.style.width = "50%";
     sidebarR.style.width = "50%";
 
-    sidebarL.innerHTML += '<img src="chars/' + name + '_thumbnail.png" class="img-fluid">';
+    //sidebarL.innerHTML += '<img src="chars/Scaled/' + name + '.jpg" class="img-fluid">';
 
     getFrameData(name);
 }
